@@ -1,0 +1,8 @@
+Docker
+
+LXC, LXD LXCFS containers
+	what are they and what is the difference?
+
+	Docker uses LXC
+
+* Aprender a usar máquina virtual
