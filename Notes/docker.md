@@ -48,7 +48,7 @@ LXC, LXD LXCFS containers
 		-i - interactive
 		--name <name> - give the container a name
 		-p <host port>:<container port> - mapping docker host port to container port, example 80:5000 maps the port 80 of the docker host to the port 5000 of the container
-		-v <host dir>:<container dir> - maps a directory on the docker host to a directory inside the container. example /opt/datadir:/var/lib/mysql
+		-v <host dir>:<container dir> - maps a directory (volume) on the docker host to a directory inside the container. example /opt/datadir:/var/lib/mysql
 
 ###docker exec <container ID or name> <command>
 	runs a command on a running container
@@ -62,4 +62,15 @@ LXC, LXD LXCFS containers
 
 ###docker logs <container name or ID>
 	shows logs of the containers which is running on the background (detached)
+
+###docker build Dockerfile (file with this name) -t <Docker username/><image name>:< image tag>
+	builds a new docker image
+	the Dockerfile has to start with referring to another image - either an OS or another image that already uses an OS
+
+###docker push <Docker username/><image name><: image tag:>
+	publishes the image on docker
+	you should have logged in first
+
+###docker login
+	logs in to Docker
 
