@@ -57,6 +57,7 @@ removes a file from the folder and grom git
 
 ## git restore .
 	delete all uncommited changes
+	-- hard will undo all changes
 
 ## git branch <branch name>
 	creates a branch
